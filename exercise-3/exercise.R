@@ -2,11 +2,11 @@
 # Use a different appraoch to accomplish the same tasks as exercise-1
 
 # install and load dplyr
-install.packages("dplyr")
+#install.packages("dplyr")
 library("dplyr")
 
 # Install devtools package: allows installations from GitHub
-install.packages('devtools')
+#install.packages('devtools')
 
 # Install "fueleconomy" package from GitHub
 devtools::install_github("hadley/fueleconomy")
@@ -15,10 +15,10 @@ devtools::install_github("hadley/fueleconomy")
 library(fueleconomy)
 
 # You should have have access to the vehicles data.frame
+data(vehicles)
 
-
-# Which Accura model has the best hwy MPG in 2015? (without method chaining)
-
+# Which Acura model has the best hwy MPG in 2015? (without method chaining)
+filter(vehicles, make == 'Acura')
 
 # Which Accura model has the best hwy MPG in 2015? (nesting functions)
 
