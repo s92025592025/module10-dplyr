@@ -29,5 +29,8 @@ vignettes/*.pdf
 /cache/
 
 # Temporary files created by R markdown
-*.utf8.md
 *.knit.md
+
+
+# Self added
+desktop.ini
