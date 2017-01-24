@@ -2,13 +2,13 @@
 # Use a different appraoch to accomplish the same tasks as exercise-1
 
 # install and load dplyr
-install.packages("dplyr")
+# install.packages("dplyr")
 library("dplyr")
 
 # Exercise 1: Data Frame Practice
 
 # Install devtools package: allows installations from GitHub
-install.packages('devtools')
+# install.packages('devtools')
 
 # Install "fueleconomy" package from GitHub
 devtools::install_github("hadley/fueleconomy")
@@ -17,7 +17,8 @@ devtools::install_github("hadley/fueleconomy")
 library(fueleconomy)
 
 # You should have have access to the vehicles data.frame
-
+vehicles <- data(vehicles)
+vehicles
 
 # Create a data.frame of vehicles from 1997
 
